@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>关于MCSL | MCSL 2</title>
+        <meta name="author" content="MCSL 2">
+        <meta name="description" content="Made by LxHTT">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://www.helloimg.com/images/2023/01/23/oRbUVn.png">
+        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features="></script>
+        
+        
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+    <meta name="generator" content="Hexo 5.4.2"></head>
+    <body>
+        <div id="loading" style="height: 100vh; width: 100vw; position: fixed; display: flex; z-index: 2147483647; justify-content: space-between; background: #fff; transition: all 0.3s ease-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none">
+    <div style="position: fixed; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center">
+        <div id="loadcontent" style="width: 50vmin; height: 50vmin; padding: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: solid 10px #a3ddfb; text-align: center">
+            <div>
+                <h2>LOADING...</h2>
+                <p style="word-break: keep-all">加载过慢请访问另外的站点。<br>站点一：<a href="https://mcsl.lxhtt.xyz">https://mcsl.lxhtt.xyz</a><br>站点一：<a target="_blank" rel="noopener" href="https://mcsl.netlify.app">https://mcsl.netlify.app</a></p>
+                <div>
+                    <img alt="loading" src="https://www.helloimg.com/images/2023/01/23/oRbKc6.gif" style="width: 60px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div id="layout">
+            <transition name="into">
+                <div v-show="showpage" style="display: -not-none">
+                    <div id="menushow">
+                        <nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">MCSL 2</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;首页</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;更新日志</span>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://mcslapi.netlify.app">
+            <i class="fa-solid fa-book fa-fw"></i>
+            <span>&ensp;下载源API</span>
+        </a>
+        
+        <a href="/preview">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;MCSL 2 预览</span>
+        </a>
+        
+        <a href="/download">
+            <i class="fa-solid fa-download fa-fw"></i>
+            <span>&ensp;下载 MCSL</span>
+        </a>
+        
+        <a href="/aboutlauncher">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于启动器</span>
+        </a>
+        
+        <a href="/aboutauthor">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于作者</span>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://space.bilibili.com/488011295">
+            <i class="fa-brands fa-bilibili fa-fw"></i>
+            <span>&ensp;作者B站</span>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://www.github.com/LxHTT/MCSL">
+            <i class="fa-brands fa-github fa-fw"></i>
+            <span>&ensp;MCSL 1源码</span>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://www.github.com/LxHTT/MCSL2">
+            <i class="fa-brands fa-github fa-fw"></i>
+            <span>&ensp;MCSL 2源码</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menushow" id="phone-menu">
+        <div class="curtain" @click="menushow = !menushow" v-show="menushow"></div>
+        <div class="title" @click="menushow = !menushow">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;MCSL 2</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menushow">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">首页</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">更新日志</div>
+                </div>
+            </a>
+            
+            <a target="_blank" rel="noopener" href="https://mcslapi.netlify.app">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-book fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">下载源API</div>
+                </div>
+            </a>
+            
+            <a href="/preview">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">MCSL 2 预览</div>
+                </div>
+            </a>
+            
+            <a href="/download">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-download fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">下载 MCSL</div>
+                </div>
+            </a>
+            
+            <a href="/aboutlauncher">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">关于启动器</div>
+                </div>
+            </a>
+            
+            <a href="/aboutauthor">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">关于作者</div>
+                </div>
+            </a>
+            
+            <a target="_blank" rel="noopener" href="https://space.bilibili.com/488011295">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-brands fa-bilibili fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">作者B站</div>
+                </div>
+            </a>
+            
+            <a target="_blank" rel="noopener" href="https://www.github.com/LxHTT/MCSL">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-brands fa-github fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">MCSL 1源码</div>
+                </div>
+            </a>
+            
+            <a target="_blank" rel="noopener" href="https://www.github.com/LxHTT/MCSL2">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-brands fa-github fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">MCSL 2源码</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+
+                    </div>
+                    <div id="main">
+                        <div class="article">
+    <div>
+        <h1>关于MCSL </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/1/16
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <p>这原先是我与朋友打赌说写一个启动器的产物，后来也不知咋的就一直这样更新下去了。<br>我甚至还发到了B站，可惜脑子抽了，MCSL 1的发布视频不会剪辑，BGM选得一塌糊涂。<br>不过MCSL 2的开发完毕已经近在咫尺，还希望各位用户多多支持。<br>本程序不接受任何形式的打赏、赞助等，若喜欢可以给我MCSL 2的GitHub来个Star、给我视频点个赞，甚至一键三连也好（（</p>
+
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+                        <footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2022 - 2023 MCSL 2
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @MCSL 2
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> & <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+                    </div>
+                </div>
+            </transition>
+            <div id="showimg">
+                <img id="showimg-content" alt="showimg">
+            </div>
+        </div>
+        <script src="/js/functions.js"></script>
+<script src="/js/particlex.js"></script>
+
+    
+    
+    
+    
+
+
+    </body>
+</html>
